@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #f00000aa;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+
+}
+body {
+  background-color: #444448;
+  font-family: sans-serif;
+}
+footer {
+  background-color: #f0f0f0aa;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+#champion {
+  float: right;
+  height: 235px;
+}
+.panel {
+  background-color: #222224aa;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
+  border: 1px #11111166 solid;
+}
