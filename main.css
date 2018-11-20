@@ -3,11 +3,11 @@
   padding: 0;
 }
 header {
-  background-color: #f00000aa;
+  background-color: #f0000099;
   padding: 15px;
   text-align: center;
   width: 100%;
-
+  box-shadow: 2px 0px 2px 0px;
 }
 body {
   background-color: #444448;
@@ -26,8 +26,53 @@ footer {
 .panel {
   background-color: #222224aa;
   display: inline-block;
+  float: none;
   padding: 20px;
   margin: 10px;
   width: 100px;
   border: 1px #11111166 solid;
+  box-shadow: 2px 2px #00000099;
+}
+#ninjutsu {
+  padding-left: 2px;
+}
+#gears {
+  padding-left: 20px;
+}
+#silk {
+  padding-left: 5px;
+}
+@media only screen and (max-width: 350px) {
+  .panel{
+    margin: 0 auto;
+  }
+  #champion {
+    margin: 0;
+  }
+  #greninja {
+    margin: 0;
+  }
+  #magearna {
+    margin: 0;
+  }
+  #ariados {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .panel{
+    margin: 0 auto;
+  }
+  #champion {
+    float: none;
+  }
+  #greninja {
+    float: none;
+  }
+  #magearna {
+    float: none;
+  }
+  #ariados {
+    float: none;
+  }
 }
