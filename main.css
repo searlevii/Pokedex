@@ -21,7 +21,7 @@ footer {
 }
 #champion {
   float: right;
-  height: 235px;
+  height: 345px;
 }
 .panel {
   background-color: #222224aa;
@@ -44,10 +44,12 @@ footer {
 }
 @media only screen and (max-width: 350px) {
   .panel{
-    margin: 0 auto;
+    margin-bottom: 1px;
   }
   #champion {
     margin: 0;
+    margin-bottom: 1px;
+    height: 304px;
   }
   #greninja {
     margin: 0;
@@ -58,7 +60,11 @@ footer {
   #ariados {
     margin: 0;
   }
+  footer {
+    margin-top: 5px;
+  }
 }
+
 @media only screen and (max-width: 300px) {
   .panel{
     margin: 0 auto;
