@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 header {
   background-color: #f0000099;
@@ -8,6 +9,10 @@ header {
   text-align: center;
   width: 100%;
   box-shadow: 2px 0px 2px 0px;
+}
+#titular {
+  font-family: Century Gothic;
+  text-shadow: 2px 0px 2px 0px;
 }
 body {
   background-color: #444448;
@@ -31,7 +36,7 @@ footer {
   margin: 10px;
   width: 100px;
   border: 1px #11111166 solid;
-  box-shadow: 2px 2px #00000099;
+  box-shadow: 4px 4px #00000033;
 }
 #ninjutsu {
   padding-left: 2px;
@@ -41,6 +46,10 @@ footer {
 }
 #silk {
   padding-left: 5px;
+}
+#trainerboi {
+  width: auto;
+  height: 10%;
 }
 @media only screen and (max-width: 350px) {
   .panel{
