@@ -32,9 +32,10 @@ axios.get('https://fizal.me/pokeapi/api/v2/name/greninja.json')
     console.log(abarray);
 
     let greninja = new Pokemon(response.data.id, response.data.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+    console.log(greninja);
     greninja.sprite()
     King.add(greninja);
-    greninja.display1();
+    greninja.display();
 });
 axios.get('https://fizal.me/pokeapi/api/v2/name/magearna.json')
   .then(function (response){
@@ -109,86 +110,43 @@ class Pokemon {
     let div = document.getElementById("champion");
 
   }
-  display1(){
-    let name = document.querySelector('ol');
-    name.innerHTML = "Name: " + this.name;
-    this.element1.appendChild(name);
-    this.container.appendChild(this.element1);
 
-    let hp = document.querySelector('ol');
-    hp.innerHTML = "HP: " + this.hp;
-    this.element1.appendChild(hp);
-    this.container.appendChild(this.element1);
-
-    let attack = document.querySelector('ol');
-    attack.innerHTML = "ATK: " + this.attack;
-    this.element1.appendChild(attack);
-    this.container.appendChild(this.element1);
-
-    let defense = document.querySelector('ol');
-    defense.innerHTML = "DEF: " + this.defense;
-    this.element1.appendChild(defense);
-    this.container.appendChild(this.element1);
-
-    let abilities = document.querySelector('ol');
-    abilities.innerHTML = "ABILITIES: " + this.abilities;
-    this.element1.appendChild(abilities);
-    this.container.appendChild(this.element1);
+  display(){
+    let nameElement = document.getElementById("pkmn");
+    nameElement.innerHTML = "Name: " + this.name;
+    let abilityElement = document.getElementById("ab");
+    abilityElement.innerHTML = "Ability: " + this.abilities;
+    let attackElement = document.getElementById("attack");
+    attackElement.innerHTML = "ATK: " + this.attack;
+    let defenseElement = document.getElementById("defense");
+    defenseElement.innerHTML = "DEF: " + this.defense;
+    let hpElement = document.getElementById("health");
+    hpElement.innerHTML = "HP: " + this.hp;
   }
- display2(){
-   let ol = document.querySelector('ol');
-   ol.innerHTML = ""
-   let name = document.querySelector('ol');
-   name.innerHTML = "Name: " + this.name;
-   this.element2.appendChild(name);
-   this.container2.appendChild(this.element2);
-
-   let hp = document.querySelector('ol');
-   hp.innerHTML = "HP: " + this.hp;
-   this.element2.appendChild(hp);
-   this.container2.appendChild(this.element2);
-
-   let attack = document.querySelector('ol');
-   attack.innerHTML = "ATK: " + this.attack;
-   this.element2.appendChild(attack);
-   this.container2.appendChild(this.element2);
-
-   let defense = document.querySelector('ol');
-   defense.innerHTML = "DEF: " + this.defense;
-   this.element2.appendChild(defense);
-   this.container2.appendChild(this.element2);
-
-   let abilities = document.querySelector('ol');
-   abilities.innerHTML = "ABILITIES: " + this.abilities;
-   this.element2.appendChild(abilities);
-   this.container2.appendChild(this.element2);
- }
- display3(){
-   let name = document.querySelector('ol');
-   name.innerHTML = "Name: " + this.name;
-   this.element3.appendChild(name);
-   this.container3.appendChild(this.element3);
-
-   let hp = document.querySelector('ol');
-   hp.innerHTML = "HP: " + this.hp;
-   this.element3.appendChild(hp);
-   this.container3.appendChild(this.element3);
-
-   let attack = document.querySelector('ol');
-   attack.innerHTML = "ATK: " + this.attack;
-   this.element3.appendChild(attack);
-   this.container3.appendChild(this.element3);
-
-   let defense = document.querySelector('ol');
-   defense.innerHTML = "DEF: " + this.defense;
-   this.element3.appendChild(defense);
-   this.container3.appendChild(this.element3);
-
-   let abilities = document.querySelector('ol');
-   abilities.innerHTML = "ABILITIES: " + this.abilities;
-   this.element3.appendChild(abilities);
-   this.container3.appendChild(this.element3);
- }
+  display2(){
+    let nameElement = document.getElementById("pkmn2");
+    nameElement.innerHTML = "Name: " + this.name;
+    let abilityElement = document.getElementById("ab2");
+    abilityElement.innerHTML = "Ability: " + this.abilities;
+    let attackElement = document.getElementById("attack2");
+    attackElement.innerHTML = "ATK: " + this.attack;
+    let defenseElement = document.getElementById("defense2");
+    defenseElement.innerHTML = "DEF: " + this.defense;
+    let hpElement = document.getElementById("health2");
+    hpElement.innerHTML = "HP: " + this.hp;
+  }
+  display3(){
+    let nameElement = document.getElementById("pkmn3");
+    nameElement.innerHTML = "Name: " + this.name;
+    let abilityElement = document.getElementById("ab3");
+    abilityElement.innerHTML = "Ability: " + this.abilities;
+    let attackElement = document.getElementById("attack3");
+    attackElement.innerHTML = "ATK: " + this.attack;
+    let defenseElement = document.getElementById("defense3");
+    defenseElement.innerHTML = "DEF: " + this.defense;
+    let hpElement = document.getElementById("health3");
+    hpElement.innerHTML = "HP: " + this.hp;
+  }
 };
 console.log(Pokemon.name);
 let greninjaclick = document.getElementById('greninja');
