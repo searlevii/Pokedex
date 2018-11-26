@@ -20,7 +20,7 @@ let King = new Trainer();
 
 
 //Axios client provides data for pokemon via the APIs//
-axios.get('https://fizal.me/pokeapi/api/v2/name/greninja.json')
+axios.get('https://pokeapi.co/api/v2/pokemon/greninja-ash/')
   .then(function (response){
     console.log(response.data);
     let ab = response.data.abilities;
